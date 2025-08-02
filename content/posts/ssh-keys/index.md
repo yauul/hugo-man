@@ -4,6 +4,9 @@ title: "How to Use SSH Keys for Secure Login"
 date: 2025-07-26T11:00:00+03:00
 description: "Learn how to generate and use SSH keys for passwordless login to Linux servers."
 tags: ["ssh", "linux", "security", "ssh-keys"]
+series: ["Linux Admin"]
+series_order: 2
+
 ---
 
 SSH keys are a secure and convenient way to log into remote servers without typing passwords.

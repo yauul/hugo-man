@@ -2,11 +2,16 @@
 title: "How to Schedule Tasks in Linux Using Crontab "
 description: "This is a demo of adding content to the homepage."
 date: 2019-03-10
-tags: ["html", "linux"]
+tags: ["automation", "linux"]
+series: ["Linux Admin"]
+categories: ["TRU ADMIN"]
+series_order: 1
 ---
 
-
 ## Introduction
+
+{{< article link="/posts/linux-journey/pi-hole/" >}}
+
 
 So you’re tasked to perform routine backup or periodic system updates on a Linux system. You have the script/commands ready but you're are facing difficulties on how to schedule and automate the tasks. I got you! We will be using the cron utility to get the job done.
 
@@ -23,7 +28,7 @@ Let’s get a few terminologies out of the way before we check out the syntax.
 > The word 'cron' is derived from the Greek word _'chronos'_, which translates to time. **#TheMoreYouKnow**
 
 ## Crontab Commands
-
+![alt text](feature.jpg "That pic")
 Here are the basic crontab configuration commands that you need to know.
 
 ### Listing
@@ -96,7 +101,6 @@ Below is an example of how to the hourly command.
 
 ```bash
 @hourly /path/to/script
-
 ```
 
 ### Ranges
