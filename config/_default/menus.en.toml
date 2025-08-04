@@ -27,13 +27,7 @@
  pageRef = "experience"
 
 [[main]]
-  identifier = "facebook"
-  pre = "facebook"
-  url = "https://twitter.com/burufugu"
-  weight = 200
-
-[[main]]
- name = "tags"
+ name = "Tags"
  pageRef = "tags"
  weight = 30
 

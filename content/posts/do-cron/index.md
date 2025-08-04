@@ -4,7 +4,6 @@ description: "This is a demo of adding content to the homepage."
 date: 2019-03-10
 tags: ["automation", "linux"]
 series: ["Linux Admin"]
-categories: ["TRU ADMIN"]
 series_order: 1
 ---
 
