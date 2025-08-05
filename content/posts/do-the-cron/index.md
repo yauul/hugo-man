@@ -1,15 +1,13 @@
 ---
 title: "How to Schedule Tasks in Linux Using Crontab "
-description: "This is a demo of adding content to the homepage."
-date: 2019-03-10
+description: "Time is on my side."
+date: 2023-05-07
 tags: ["automation", "linux"]
-series: ["Linux Admin"]
-series_order: 1
+summmary: "Don't DO IT!."
 ---
 
 ## Introduction
 
-{{< article link="/posts/linux-journey/pi-hole/" >}}
 
 
 So you’re tasked to perform routine backup or periodic system updates on a Linux system. You have the script/commands ready but you're are facing difficulties on how to schedule and automate the tasks. I got you! We will be using the cron utility to get the job done.
@@ -26,8 +24,19 @@ Let’s get a few terminologies out of the way before we check out the syntax.
 
 > The word 'cron' is derived from the Greek word _'chronos'_, which translates to time. **#TheMoreYouKnow**
 
+
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: ['Tomato', 'Blueberry', 'Banana', 'Lime', 'Orange'],
+  datasets: [{
+    label: '# of votes',
+    data: [12, 19, 3, 5, 3],
+  }]
+}
+{{< /chart >}}
+
 ## Crontab Commands
-![alt text](feature.jpg "That pic")
 Here are the basic crontab configuration commands that you need to know.
 
 ### Listing
@@ -70,7 +79,7 @@ To define our scheduled tasks, we have to understand the syntax of a cron job.
 
 A cron job consists of 6 fields as shown below. Let’s explain each.
 
-![Crontab Image](/images/post-images/do-the-cron/cron-job-command.jpg)
+![Crontab Image](./cron-job-command.jpg)
 
 The syntax for a cron job is shown above. There are a total of 6 fields. The first 5 fields defines the schedule and the 6th field is where you write the command you want to execute.
 
