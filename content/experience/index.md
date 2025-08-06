@@ -1,8 +1,6 @@
 ---
 title: "Experience"
 description: "Yoel Lorenso - Experience"
-showDate: false
-date: 2
 ---
 
 ## 👨‍💻 Experience

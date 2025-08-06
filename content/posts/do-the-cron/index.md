@@ -25,17 +25,6 @@ Let’s get a few terminologies out of the way before we check out the syntax.
 > The word 'cron' is derived from the Greek word _'chronos'_, which translates to time. **#TheMoreYouKnow**
 
 
-{{< chart >}}
-type: 'bar',
-data: {
-  labels: ['Tomato', 'Blueberry', 'Banana', 'Lime', 'Orange'],
-  datasets: [{
-    label: '# of votes',
-    data: [12, 19, 3, 5, 3],
-  }]
-}
-{{< /chart >}}
-
 ## Crontab Commands
 Here are the basic crontab configuration commands that you need to know.
 
@@ -93,17 +82,17 @@ Let’s have a quick look on these fields.
 4. **Month**: if you want to schedule a job at a specific month of the year. Acceptable inputs are 1 - 12. You can write a shortened 3-character month format like Jan, Feb, Mar, etc instead of numbers.
 5. **Day of the Week**: if you want to schedule a job at a specific day of the week. Acceptable inputs are 0 - 6, 0 being Sunday and 6 being Saturday. 7 is also considered a Sunday, although it’s not standard. Similarly, you can also write a shortened 3-character day format like Sun, Mon, Tue, etc.
 6. **Command**: the command or script you want to execute. This could be a script you made or Linux commands.
-   Use absolute paths to the location of the scripts or command. For example, `/usr/bin/echo hello{:bash}`.
+   Use absolute paths to the location of the scripts or command. For example, `/usr/bin/echo hello`.
 
 There are special predefined definitions you can use when writing your cron jobs.
 
 | Definition        | Syntax             |
 | ----------------- | ------------------ |
-| `@hourly{:bash}`  | `0 * * * *{:bash}` |
-| `@daily{:bash}`   | `0 0 * * *{:bash}` |
-| `@weekly{:bash}`  | `0 0 * * 0{:bash}` |
-| `@monthly{:bash}` | `0 0 1 * *{:bash}` |
-| `@yearly{:bash}`  | `0 0 1 1 *{:bash}` |
+| `@hourly`  | `0 * * * *` |
+| `@daily`   | `0 0 * * *` |
+| `@weekly`  | `0 0 * * 0` |
+| `@monthly` | `0 0 1 * *` |
+| `@yearly`  | `0 0 1 1 *` |
 
 Below is an example of how to the hourly command.
 
